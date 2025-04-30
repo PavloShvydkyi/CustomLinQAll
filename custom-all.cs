@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace CustomLinQAll
 {
-    static class CustomAll
+    static class CustomAllExt
     {
-        public static bool CastomAll<T>(this IEnumerable<T> source, Func<T, bool> predicate)
+        public static bool CustomAll<T>(this IEnumerable<T> source, Func<T, bool> predicate)
         {
             if (source == null)
                 throw new ArgumentNullException(nameof(source));
